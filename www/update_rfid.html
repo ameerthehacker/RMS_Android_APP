@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Create RFID</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">    
+        <link rel="stylesheet" href="css/jquery-ui.min.css">                  
+        <style>
+            body{
+                margin-top:70px;
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="station"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><i class="fa fa-arrow-left"></i></a>
+                <div class="container">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a  href="#" id="btn-logout">Logout</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container"> 
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-pencil"></i> Update RMS </h4>
+                    </div>
+                    <div class="panel-body">
+                        <form action="" method="post" class="form-horizontal" id="frm-create-tag">
+                            <div class="form-group">
+                                <div class="col-xs-12"><input id="rfid-number" type="text" class="form-control" placeholder="RFID Number" name="uid"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <input id="train-search" name="train_no" type="text" class="form-control" placeholder="Train Number">
+                                        <span class="input-group-btn">
+                                            <button id="btn-get-destination" class="btn btn-secondary">
+                                               <i class="fa fa-pencil"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-xs-12"><input id="destinations" name="destination" type="text" class="form-control" placeholder="Destination"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12"><input id="btn-update-rfid" type="button" class="form-control btn btn-success" value="Update Tag"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/jquery.js"></script>   
+    <script src="js/jquery.form.js"></script>       
+    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/jquery-ui.min.js"></script>       
+    <script src="js/update_rfid.js"></script>                                   
+</html>

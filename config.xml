@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mepco.rms" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>RMS App</name>
+    <description>
+        A blank PhoneGap app.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <content src="index.html" />
+    
+    <access origin="*" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>
